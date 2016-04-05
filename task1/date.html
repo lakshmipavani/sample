@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+
+<style>
+
+
+</style>
+</head>
+
+<body>
+
+<button id="mybtn" onclick="my()">try</button>
+<p id="demo"></p>
+<button id="mybtn1" onClick="my2()">try</button>
+
+
+
+<script>
+document.getElementById("demo").innerHTML = Date();
+
+function my(){
+ var d = new Date();
+d.setDate(d.getDate() - 1);
+document.getElementById("demo").innerHTML = d.toDateString();
+
+
+ }
+
+function my2(){
+ var d = new Date();
+d.setDate(d.getDate() + 1);
+document.getElementById("demo").innerHTML = d.toDateString();
+
+}
+</script>
+
+</body>
+</html>

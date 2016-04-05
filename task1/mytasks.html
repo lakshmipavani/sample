@@ -1,0 +1,98 @@
+<html>
+
+  <head>
+   <script>
+
+function addCheck(){
+ var i=0;  
+  
+  if(i<5)
+    {
+       var label=document.createElement(label);
+       x.appendChild(t);
+       var t=document.createTextNode("haiii");
+       document.body.appendChild(x);    
+     
+
+    }
+
+
+}
+
+
+function addElement() {
+    if(intTextBox < 5){
+    intTextBox++;
+    var objNewDiv = document.createElement('div');
+    objNewDiv.setAttribute('id', 'div_' + intTextBox);
+    objNewDiv.innerHTML =  ': <input type="checkbox" id="tb_' + intTextBox + '" name="tb_' + intTextBox + '"/>'+'<input type="text" id="tb_' + intTextBox + '" name="tb_' + intTextBox + '"/>';
+    document.getElementById('content').appendChild(objNewDiv);
+}
+}
+
+var intTextBox = 0;
+ if(intTextBox ==0){
+function addElement1(){
+   intTextBox++;
+   var objNewDiv = document.createElement('div');
+   objNewDiv.setAttribute('id', 'div_' + intTextBox);
+   objNewDiv.innerHTML =  ': <input type="text" id="tb_' + intTextBox + '" name="tb_' + intTextBox + '"/>';
+   document.getElementById('content').appendChild(objNewDiv);
+ }
+
+}
+
+
+/* for removing*/
+
+
+function removeElement() {
+    if(0 < intTextBox) {
+        document.getElementById('content').removeChild(document.getElementById('div_' + intTextBox));
+        intTextBox--;
+    } else {
+        alert("No textbox to remove");
+    }
+}
+
+   </script>
+
+  </head>
+
+
+
+
+  <body>
+
+  <h3> What are your five most important tasks for today?</h3>
+ 
+  <input type="checkbox" value=c1 >Citizen Parking IOS build</input><br>
+   
+  <input type="checkbox" value=c1 >CDP DashBoard Regions</input><br>
+   
+   <input type="checkbox" value=c1 >Quora</input><br>
+   
+   <input type="checkbox" value=c1 >Strong loop API explorer</input><br>
+
+
+
+<p>
+    <a href="javascript:void(0);" onclick="addElement();"><img src="1.png"></a>
+    <a href="javascript:void(0);" onclick="removeElement();"><img src="2.png"> </a>
+</p>
+<div id="content"></div>
+
+
+
+<div id="first">
+   
+     you have room for 5 tasks to enter
+     <a href="javascript:void(0);" onclick="addCheck();"><img src="1.png"></a>
+
+
+
+
+  </body>
+
+
+</html>
